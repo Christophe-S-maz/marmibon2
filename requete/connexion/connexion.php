@@ -24,6 +24,6 @@
 
 
     if($_SESSION['estConnecte']){
-        header("Location: http://localhost/projet/back/marmibon2/profil");
+        header("Location: http://localhost/projet/back/marmi/marmibon2/profil");
     }
 ?>
