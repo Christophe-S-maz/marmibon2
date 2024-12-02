@@ -1,0 +1,27 @@
+.logo{
+
+    display: flex;
+    justify-content: center;
+}
+
+.navlist{
+
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.lienNav {
+
+    text-decoration: none;
+    color: #ff7f27;
+    font-size: 22px;
+}
+
+
+.lienListe {
+
+    text-decoration: none;
+    color: rgba(69, 42, 113, 0.937);
+    font-size: 18px;
+}
