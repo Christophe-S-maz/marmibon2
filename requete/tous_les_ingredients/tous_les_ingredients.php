@@ -11,7 +11,7 @@
 
         foreach($data as $row){
             $id = $row["id_ingredient"];
-            echo "" ?> <a class= "lienListe" href="http://localhost/projet/back/marmibon2/ingredients/<?php echo $id ?>"><?php echo $row["nom"] . "<br>"; ?> </a> <?php
+            echo "" ?> <a class= "lienListe" href="http://localhost/projet/back/marmi/marmibon2/ingredients/<?php echo $id ?>"><?php echo $row["nom"] . "<br>"; ?> </a> <?php
         }
     }
 ?>

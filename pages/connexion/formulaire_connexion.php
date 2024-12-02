@@ -1,7 +1,7 @@
 <?php
 
     if($_SESSION['estConnecte'] == true){
-        header("Location: http://localhost/projet/back/marmibon2/profil");
+        header("Location: http://localhost/projet/back/marmi/marmibon2/profil");
     }
     if(empty($_POST['pseudo'])){
         $_POST['pseudo'] = "";
