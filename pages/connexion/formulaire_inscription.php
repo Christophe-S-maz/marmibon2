@@ -1,3 +1,12 @@
+<?php 
+
+if(empty($_POST['pseudo'])){
+    $_POST['pseudo'] = "";
+    $_POST['mdp'] = "";
+}
+?>
+
+
 <h1 class="titre">Inscription</h1>
 
 <div class="formulaire">

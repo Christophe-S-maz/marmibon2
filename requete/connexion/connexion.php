@@ -14,7 +14,7 @@
 
         foreach($data as $user){
 
-            if($user['pseudo'] == $_POST['pseudo'] && $user['mdp'] == $_POST['mdp']){
+            if($user['pseudo'] == $_POST['pseudo'] && $user['mdp'] == $_POST['mdp'] && $_POST['pseudo'] != ""){
 
                 $_SESSION['estConnecte'] = true;
                 $_SESSION['pseudo'] = $user['pseudo'];
