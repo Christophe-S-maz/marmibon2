@@ -49,3 +49,20 @@
    font-size: 20px;
     
 }
+
+.champFiltre{
+
+    display: flex;  
+    justify-content: center;
+  
+}
+
+.filtre{
+
+    margin-left: 20px;
+}
+
+form label{
+
+    margin-left: 20px;
+}

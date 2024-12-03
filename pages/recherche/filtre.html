@@ -1,0 +1,47 @@
+<h2 class="titre">Filtres</h2>
+
+<div class="champFiltre">
+
+    <form method="post">
+
+        <div class="filtre">
+            <label>Nom de la recette : </label>
+            <input type="text" name = "nomRecette" autocomplete="off">
+     
+
+        
+            <label>Par ingrédient : </label>
+            <input type="text" name = "nomIngredient" autocomplete="off">
+        
+
+            <label>Par régime Alimentaire :</label>
+            <select name ="regime-alimentaire" id = "regimeSelect">
+                <option value="">Choisissez un régime alimentaire</option>
+                <option value="omnivore">Aucune restriction</option>
+                <option value="vegetarien">vegetarien</option>
+            </select>
+
+       
+
+            <label>Par repas : </label>
+            <select name ="repas" id = "repasSelect">
+                <option value="">Choisissez un repas</option>
+                <option value="Petit déjeuner">Petit déjeuner</option>
+                <option value="déjeuner">déjeuner</option>
+                <option value="diner">diner</option>
+                <option value="souper">souper</option>
+                <option value="gouter">gouter</option>
+                <option value="brunch">brunch</option>
+                <option value="apéritif dinatoire">apéritif dinatoire</option>
+            </select>
+
+            <br><br>
+
+        </div>
+
+        <div class="champFiltre">
+            <input type="submit" name="valider" value = "Recherche">
+        </div>
+
+    </form>
+</div>
