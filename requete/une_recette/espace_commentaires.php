@@ -16,13 +16,16 @@
     $data = $query->fetchAll();
 
     if ($data == true && sizeof($data) > 0) {
-        ?> <ul>  <?php
-       foreach($data as $commentaires){
-        ?>  <li> <?php echo $commentaires['message'] . " -- "; 
-        $com = $commentaires['message'];
-        include("requete/une_recette/pseudo.php");
 
-        ?>  </li> <?php
+        ?> <ul>  <?php
+        
+       foreach($data as $commentaires){
+
+            ?>  <li> <?php echo $commentaires['message'] . " -- "; 
+            $com = $commentaires['message'];
+            include("requete/une_recette/pseudo.php");
+
+            ?>  </li> <?php
        }
        ?>  </ul> <?php
     }

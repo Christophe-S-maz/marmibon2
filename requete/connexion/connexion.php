@@ -24,6 +24,8 @@
 
 
     if($_SESSION['estConnecte']){
-        header("Location: http://localhost/projet/back/marmi/marmibon2/profil");
+        header("Location: profil");
     }
 ?>
+
+<div class = "lienInscription"> <a href="">Pas encore de compte ? Inscrivez vous !</a></div>

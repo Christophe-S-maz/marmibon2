@@ -4,6 +4,9 @@
 <?php 
 
     session_start();
+    if(!isset($_SESSION["estConnecte"])){
+        $_SESSION["estConnecte"] =  false;
+    }
     
     include("assets/includes/head.html");
     include("assets/includes/header.html");

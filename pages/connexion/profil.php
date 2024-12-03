@@ -1,7 +1,7 @@
 <?php
 
     if($_SESSION['estConnecte'] != true){
-        header("Location: http://localhost/projet/back/marmi/marmibon2/connexion");
+        header("Location: connexion");
     }
 
 ?>

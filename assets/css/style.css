@@ -25,3 +25,20 @@
     color: rgba(69, 42, 113, 0.937);
     font-size: 18px;
 }
+
+.lienInscription{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formulaire{
+
+    display: flex;
+    justify-content: center;
+}
+
+.titre{
+
+    text-align: center;
+}

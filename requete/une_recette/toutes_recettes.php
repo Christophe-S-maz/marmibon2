@@ -12,7 +12,7 @@
         foreach($data as $row){
            
             $id = $row["id_recette"];
-            echo "" ?> <a class= "lienListe" href="http://localhost/projet/back/marmi/marmibon2/recettes/<?php echo $id ?>"><?php echo $row["nom"] . "<br>"; ?> </a> <?php
+            echo "" ?> <a class= "lienListe" href="recettes/<?php echo $id ?>"><?php echo $row["nom"] . "<br>"; ?> </a> <?php
         }
     }
 ?>
