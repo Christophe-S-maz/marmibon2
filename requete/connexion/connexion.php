@@ -28,4 +28,4 @@
     }
 ?>
 
-<div class = "lienInscription"> <a href="">Pas encore de compte ? Inscrivez vous !</a></div>
+<div class = "lienInscription"> <a href="inscription">Pas encore de compte ? Inscrivez vous !</a></div>

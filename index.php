@@ -57,6 +57,12 @@
     } else if ($maRoute[0] == "profil"){
 
         include("pages/connexion/profil.php");
+
+    } else if ($maRoute[0] == "inscription"){
+
+        include("pages/connexion/formulaire_inscription.html");
+        require("db/connexion.php");
+        include("requete/connexion/inscription.php");
     }
     
     else {
