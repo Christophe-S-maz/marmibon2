@@ -152,7 +152,7 @@
 
     } else{
 
-        echo "rien";
+        echo "";
     }
 
 ?>

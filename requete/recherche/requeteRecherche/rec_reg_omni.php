@@ -15,6 +15,7 @@
                                         JOIN regimes_alimentaire
                                         ON ingredients_regimes.id_regime = regimes_alimentaire.id_regime
                                         WHERE regimes_alimentaire.nom = '$regime'
+                                        OR regimes_alimentaire.nom = 'vegetarien'
                                         GROUP BY recettes.id_recette
                                         )
              ";

@@ -26,11 +26,13 @@
             require("db/connexion.php");
             include("pages/recherche/filtre.php");
 
+            if(!($nom_recette_declare || $nom_ingredient_declare || $regime_alimentaire_declare || $repas_declare)){
+                
+                include("pages/recettes/toutes_recettes.html");
 
-            include("pages/recettes/toutes_recettes.html");
-
-            require("db/connexion.php");
-            require("requete/une_recette/toutes_recettes.php");
+                require("db/connexion.php");
+                require("requete/une_recette/toutes_recettes.php");
+            }
 
         } else if ( is_numeric($maRoute[1])  ) {
 

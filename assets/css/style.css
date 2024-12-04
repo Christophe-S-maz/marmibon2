@@ -47,14 +47,12 @@
 
    margin-left: 800px;
    font-size: 20px;
-    
 }
 
 .champFiltre{
 
     display: flex;  
     justify-content: center;
-  
 }
 
 .filtre{
@@ -65,4 +63,11 @@
 form label{
 
     margin-left: 20px;
+}
+
+.listeRecherche{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
