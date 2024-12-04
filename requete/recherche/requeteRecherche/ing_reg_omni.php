@@ -2,15 +2,13 @@
 
      $sql = "SELECT recettes.nom, recettes.id_recette
              FROM recettes
-             WHERE recettes.nom LIKE '%$recette%'
-
-             AND recettes.id_recette IN (SELECT recettes.id_recette FROM recettes
-                                        JOIN ingredients_recettes
-                                        ON recettes.id_recette = ingredients_recettes.id_recette
-                                        JOIN ingredients
-                                        ON ingredients_recettes.id_ingredient = ingredients.id_ingredient
-                                        WHERE ingredients.nom LIKE '%$ingredient%'
-                                        )
+             WHERE recettes.id_recette IN (SELECT recettes.id_recette FROM recettes
+                                            JOIN ingredients_recettes
+                                            ON recettes.id_recette = ingredients_recettes.id_recette
+                                            JOIN ingredients
+                                            ON ingredients_recettes.id_ingredient = ingredients.id_ingredient
+                                            WHERE ingredients.nom LIKE '%$ingredient%'
+                                            )
              
              AND recettes.id_recette IN (SELECT recettes.id_recette FROM recettes
                                         JOIN ingredients_recettes
@@ -23,12 +21,6 @@
                                         ON ingredients_regimes.id_regime = regimes_alimentaire.id_regime
                                         WHERE regimes_alimentaire.nom = '$regime'
                                         GROUP BY recettes.id_recette
-                                        )
-                            
-             AND recettes.id_recette IN (SELECT recettes.id_recette FROM recettes
-                                        JOIN repas
-                                        ON recettes.id_repas = repas.id_repas
-                                        WHERE repas.nom = '$repas'
                                         )
              ";
 

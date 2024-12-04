@@ -31,32 +31,52 @@
             } else if($repas_declare){
 
                 // requete avec 1, 2 et 4
-                echo "1,2 et 4";
+                
+                include("requete/recherche/requeteRecherche/rec_ing_rep.php");
                 
             } else {
 
                 // requete avec 1 et 2
-                echo "1 et 2";
+                
+                include("requete/recherche/requeteRecherche/rec_ing.php");
             }
         } else if ($regime_alimentaire_declare){
 
             if($repas_declare){
 
                 //requete avec 1, 3 et 4
-                echo "1,3 et 4";
+                if($regime == "omnivore"){
+
+                include("requete/recherche/requeteRecherche/rec_reg_rep_omni.php");
+
+               }else {
+
+                include("requete/recherche/requeteRecherche/rec_ing_reg_vege.php");
+               }
+
             } else {
 
                 //requete 1 et 3
-                echo "1 et 3";
+                if($regime == "omnivore"){
+
+                    include("requete/recherche/requeteRecherche/rec_reg_omni.php");
+
+                } else {
+
+                    include("requete/recherche/requeteRecherche/rec_reg_vege.php");
+
+                }
             }
         } else if ($repas_declare){
 
             // requete avec 1 et 4
-            echo "1 et 4";
+            include("requete/recherche/requeteRecherche/rec_rep.php");
+
         } else {
 
             //requete 1
-            echo "1";
+            include("requete/recherche/requeteRecherche/rec.php");
+
         }
     } else if ($nom_ingredient_declare){
 
@@ -65,37 +85,71 @@
             if($repas_declare){
 
                 //requete 2, 3 et 4
-                echo "2, 3 et 4";
+                if($regime == "omnivore"){
+
+                    include("requete/recherche/requeteRecherche/ing_reg_rep_omni.php");
+
+                } else {
+
+                    include("requete/recherche/requeteRecherche/ing_reg_rep_vege.php");
+
+                }
             } else {
 
                 //requete 2 et 3
-                echo "2 et 3";
+                if($regime == "omnivore"){
+
+                    include("requete/recherche/requeteRecherche/ing_reg_omni.php");
+
+                } else{
+
+                    include("requete/recherche/requeteRecherche/");
+
+                }
             }
         } else if($repas_declare){
 
             //requete 2 et 4
-            echo "2 et 4";
+            include("requete/recherche/requeteRecherche/ing_rep.php");
+
         } else {
 
             //requete 2
-            echo "2";
+            include("requete/recherche/requeteRecherche/ing.php");
+
         }
     } else if($regime_alimentaire_declare){
 
         if($repas_declare){
 
             //requete 3 et 4
-            echo "3 et 4";
+            if($regime == "omnivore"){
+
+                include("requete/recherche/requeteRecherche/reg_rep_omni.php");
+
+            } else {
+
+                include("requete/recherche/requeteRecherche/reg_rep_vege.php");
+
+            }
         } else {
 
             //requete 3
 
-            echo "3";
+            if($regime == "omnivore"){
+
+                include("requete/recherche/requeteRecherche/reg_omni.php");
+
+            } else {
+
+                include("requete/recherche/requeteRecherche/reg_vege.php");
+            }
         }
     } else if($repas_declare){
 
         //requete 4
-        echo "4";
+        include("requete/recherche/requeteRecherche/rep.php");
+
     } else{
 
         echo "rien";

@@ -2,9 +2,7 @@
 
      $sql = "SELECT recettes.nom, recettes.id_recette
              FROM recettes
-             WHERE recettes.nom LIKE '%$recette%'
-             
-             AND recettes.id_recette IN (SELECT recettes.id_recette FROM recettes
+             WHERE recettes.id_recette IN (SELECT recettes.id_recette FROM recettes
                                         JOIN ingredients_recettes
                                         ON recettes.id_recette = ingredients_recettes.id_recette
                                         JOIN ingredients
