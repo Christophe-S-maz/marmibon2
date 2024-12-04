@@ -23,6 +23,7 @@
         if ( !isset($maRoute[1]) || $maRoute[1] == "toutes" || $maRoute[1] == "" ) {
 
             include("pages/recherche/filtre.html");
+            require("db/connexion.php");
             include("pages/recherche/filtre.php");
 
 
