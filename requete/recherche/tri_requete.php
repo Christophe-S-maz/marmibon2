@@ -11,7 +11,7 @@
                     // requete avec les 4 filtres
                     if($regime == "omnivore"){
 
-                         include("requete/recherche/requeteRecherche/tous_les_filtres_omni.php");
+                        include("requete/recherche/requeteRecherche/tous_les_filtres_omni.php");
                     } else {
 
                         include("requete/recherche/requeteRecherche/tous_les_filtres_vege.php");
@@ -20,7 +20,13 @@
                 } else{
 
                     // requete 1, 2 et 3
-                    echo "1,2 et 3";
+                    if($regime == "omnivore"){
+
+                        include("requete/recherche/requeteRecherche/rec_ing_reg_omni.php");
+                    } else {
+
+                        include("requete/recherche/requeteRecherche/rec_ing_reg_vege.php");
+                    }
                 }
             } else if($repas_declare){
 
