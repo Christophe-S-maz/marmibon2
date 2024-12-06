@@ -17,15 +17,14 @@
 
     if ($data == true && sizeof($data) > 0) {
 
-        ?> <ul>  <?php
         
        foreach($data as $commentaires){
 
-            ?>  <li> <?php echo $commentaires['message'] . " -- "; 
+            ?>  <a class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"> <?php echo $commentaires['message'] . " -- "; 
             $com = $commentaires['message'];
             include("requete/une_recette/pseudo.php");
 
-            ?>  </li> <?php
+            ?>  </a> <?php
        }
        ?>  </ul> <?php
     }

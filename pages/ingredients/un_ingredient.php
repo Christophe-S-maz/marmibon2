@@ -1,11 +1,14 @@
 <body>
-    <h1><?php echo $nomIngredient ; ?></h1>
 
-    <h3>Saison de récolte</h3>
+    <div class="centre">
+        <h1><?php echo $nomIngredient ; ?></h1>
 
-    <?php include("requete/tous_les_ingredients/saison.php"); ?>
+        <h3>Saison de récolte :</h3>
 
-    <h3>Type d'aliment</h3>
+        <?php include("requete/tous_les_ingredients/saison.php"); ?>
 
-    <?php include("requete/tous_les_ingredients/type_aliment.php"); ?>
+        <h3>Type d'aliment :</h3>
+
+        <?php include("requete/tous_les_ingredients/type_aliment.php"); ?>
+    </div>
 </body>

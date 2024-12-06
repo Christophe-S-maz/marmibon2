@@ -12,7 +12,8 @@
         $query->execute(
             array(
                 ":pseudo" => $_POST['pseudo'],
-                ":mdp" => $_POST['mdp']
+                // ":mdp" => $_POST['mdp']
+                ":mdp" => password_hash($_POST['mdp'], PASSWORD_DEFAULT)
             )
         );
         $_SESSION['estConnecte'] = true;

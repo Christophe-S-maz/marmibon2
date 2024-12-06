@@ -1,9 +1,12 @@
 <?php
 
-     $sql = "SELECT recettes.nom, recettes.id_recette
+     $sql = "SELECT recettes.nom, recettes.id_recette, preparations.titre
              FROM recettes
+             JOIN recettes_preparations
+             ON recettes.id_recette = recettes_preparations.id_recette
+             JOIN preparations
+             ON recettes_preparations.id_preparation_rec = preparations.id_preparation
              WHERE recettes.nom LIKE '%$recette%'
-                                        )
              
              AND recettes.id_recette NOT IN (SELECT recettes.id_recette FROM recettes
                                              JOIN ingredients_recettes
@@ -24,10 +27,5 @@
 
         $data = $query->fetchAll();
 
-        if ($data == true && sizeof($data) > 0) {
-            foreach($data as $recettes){
-               $id = $recettes["id_recette"];
-               echo "" ?> <li> <a class= "lienListe" href="recettes/<?php echo $id ?>"><?php echo $recettes["nom"] . "<br>"; ?> </a> </li><?php
-            }
-         }
+
 ?>

@@ -45,7 +45,9 @@
 
 .centre{
 
-   margin-left: 800px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    font-size: 20px;
 }
 
@@ -67,7 +69,8 @@ form label{
 
 .listeRecherche{
 
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
