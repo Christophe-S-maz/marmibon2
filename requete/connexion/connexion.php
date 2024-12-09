@@ -7,6 +7,8 @@
 
     $data = $query->fetchAll();
 
+    $user = "";
+
     if ($data == true && sizeof($data) > 0) {
 
         foreach($data as $user){

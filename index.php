@@ -8,6 +8,8 @@
         $_SESSION["estConnecte"] =  false;
     }
     
+    ob_start();
+
     include("assets/includes/head.html");
     include("assets/includes/header.html");
 
@@ -39,6 +41,7 @@
 
             require("db/connexion.php");
             include("requete/une_recette/une_recette.php");
+
         } else {
             include("pages/404notfound.html");
         }
@@ -61,15 +64,16 @@
         require("db/connexion.php");
         include("requete/connexion/connexion.php");
 
-    } else if ($maRoute[0] == "profil"){
-
-        include("pages/connexion/profil.php");
-
     } else if ($maRoute[0] == "inscription"){
 
         include("pages/connexion/formulaire_inscription.php");
         require("db/connexion.php");
         include("requete/connexion/inscription.php");
+
+    } else if ($maRoute[0] == "profil"){
+
+        include("pages/connexion/profil.php");
+        
     }
     
     else {

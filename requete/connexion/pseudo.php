@@ -5,7 +5,7 @@
             ON  utilisateurs.id_utilisateur = commentaires.id_utilisateur
             JOIN recettes
             ON commentaires.id_recette = recettes.id_recette
-            WHERE recettes.id_recette = :id_recette AND commentaires.message = :commentaire
+            WHERE recettes.id_recette = :id_recette AND commentaires.msg = :commentaire
             ";
     $query = $pdo->prepare($sql);
     $query->execute(
