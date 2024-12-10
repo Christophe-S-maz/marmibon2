@@ -11,6 +11,6 @@
 </div>
 <?php
 
-    require("requete/commentaire/gestion_modif_com.php");
+    require("php/requete/commentaire/gestion_modif_com.php");
 
 ?>

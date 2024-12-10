@@ -5,10 +5,10 @@
 
         <h3>Saison de récolte :</h3>
 
-        <?php include("requete/tous_les_ingredients/saison.php"); ?>
+        <?php include("php/requete/ingredient/saison.php"); ?>
 
         <h3>Type d'aliment :</h3>
 
-        <?php include("requete/tous_les_ingredients/type_aliment.php"); ?>
+        <?php include("php/requete/ingredient/type_aliment.php"); ?>
     </div>
 </body>

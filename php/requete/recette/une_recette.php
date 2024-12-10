@@ -1,0 +1,20 @@
+<div class="centre">
+    <?php 
+
+    $id_recette_demande = $maRoute[1];
+
+    $sql = "SELECT * FROM recettes WHERE id_recette = :id_recette";
+
+    $query = $pdo->prepare($sql);
+    $query->execute(
+        array(
+            ":id_recette" => $id_recette_demande
+        )
+    );
+
+    $data = $query->fetch();
+
+   require("php/php/recette/une_recette.php");
+
+    ?>
+</div>

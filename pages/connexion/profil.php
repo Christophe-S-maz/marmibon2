@@ -11,7 +11,7 @@
 
         echo "Bonjour " . $_SESSION['pseudo'];
 
-        include("requete/connexion/deconnexion.php");
+        include("php/php/connexion/deconnexion.php");
     ?>
 
 
