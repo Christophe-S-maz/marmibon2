@@ -45,7 +45,7 @@
                     }
                 }
                 ?>
-            <p class="font-normal text-gray-700 dark:text-gray-400"><?php include("requete/commentaire/espace_commentaires.php"); ?></p>   
+            <?php include("requete/commentaire/espace_commentaires.php"); ?> 
             
         </a>
     </a>
